@@ -7,10 +7,14 @@ public class StateMachine : MonoBehaviour
     public BaseState activeState;
 
     public PatrolState patrolState;
+    public ChaseState chaseState;
+    public AttackState attackState;
 
     public void Initialise()
     {
         patrolState = new PatrolState();
+        chaseState = new ChaseState();
+        attackState = new AttackState();
         ChangeState(patrolState);
     }
 

@@ -71,6 +71,7 @@
     <Compile Include="Assets\FPSShooter\Scripts\Gun\GunInventory.cs" />
     <Compile Include="Assets\FPSShooter\PlayerInput\PlayerInput.cs" />
     <Compile Include="Assets\FPSShooter\Scripts\Player\MouseLookScript.cs" />
+    <Compile Include="Assets\FPSShooter\Scripts\Enemy\States\ChaseState.cs" />
     <Compile Include="Assets\FPSShooter\Scripts\Gun\BulletScript.cs" />
     <Compile Include="Assets\FPSShooter\Scripts\Player\PlayerMovementScript.cs" />
     <Compile Include="Assets\FPSShooter\Scripts\Enemy\States\BaseState.cs" />
@@ -79,6 +80,7 @@
     <Compile Include="Assets\FPSShooter\Scripts\Gun\GunScript.cs" />
     <Compile Include="Assets\FPSShooter\Scripts\Player\InputManager.cs" />
     <Compile Include="Assets\FPSShooter\Scripts\Enemy\Path.cs" />
+    <Compile Include="Assets\FPSShooter\Scripts\Enemy\States\AttackState.cs" />
     <Compile Include="Assets\FPSShooter\Scripts\Enemy\StateMachine.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -1042,12 +1044,12 @@
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.VSCode.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
       <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>

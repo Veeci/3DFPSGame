@@ -3669,6 +3669,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4412880038327328}
+  - component: {fileID: 1385115789391154176}
   m_Layer: 0
   m_Name: Zombie_Ctrl_LeftHand
   m_TagString: Untagged
@@ -3685,7 +3686,7 @@ Transform:
   m_GameObject: {fileID: 1660986475908136}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.18085368, y: -0.11344536, z: 0.11050371}
+  m_LocalPosition: {x: -0.256, y: -0.211, z: 0.221}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3696,6 +3697,27 @@ Transform:
   - {fileID: 4044934313672696}
   m_Father: {fileID: 4805167265688854}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1385115789391154176
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660986475908136}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.2, y: 0.2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1663720943049710
 GameObject:
   m_ObjectHideFlags: 0
@@ -4159,7 +4181,7 @@ Transform:
   m_GameObject: {fileID: 1723558853716556}
   serializedVersion: 2
   m_LocalRotation: {x: 1.3877788e-17, y: -2.3418919e-17, z: -1.0852422e-16, w: 1}
-  m_LocalPosition: {x: -0, y: 0.07, z: 0}
+  m_LocalPosition: {x: 0.002, y: 0.07, z: -0.064}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4175,6 +4197,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4349680413588672}
+  - component: {fileID: 2218914556463375676}
   m_Layer: 0
   m_Name: Zombie_Ctrl_RightHandIndex4
   m_TagString: Untagged
@@ -4191,12 +4214,33 @@ Transform:
   m_GameObject: {fileID: 1723974694732416}
   serializedVersion: 2
   m_LocalRotation: {x: 2.7755576e-17, y: 2.7755576e-17, z: -2.0816682e-17, w: 1}
-  m_LocalPosition: {x: 0.0085430145, y: -0.051352385, z: 0.026138773}
+  m_LocalPosition: {x: -0.058, y: 0.056, z: 0.023}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4575722097539192}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2218914556463375676
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723974694732416}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Size: {x: 0.1, y: 0.2, z: 0.1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1727969696975246
 GameObject:
   m_ObjectHideFlags: 0
@@ -5120,6 +5164,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4244994327363020}
+  - component: {fileID: 407711315645568090}
   m_Layer: 0
   m_Name: Zombie_Ctrl_RightHand
   m_TagString: Untagged
@@ -5136,7 +5181,7 @@ Transform:
   m_GameObject: {fileID: 1863803559811496}
   serializedVersion: 2
   m_LocalRotation: {x: -1.2325952e-32, y: 6.123234e-17, z: 0, w: 1}
-  m_LocalPosition: {x: 0.18085368, y: -0.11344536, z: 0.11050371}
+  m_LocalPosition: {x: 0.218, y: -0.227, z: 0.238}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5147,6 +5192,27 @@ Transform:
   - {fileID: 4678537046277952}
   m_Father: {fileID: 4908278356026832}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &407711315645568090
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863803559811496}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.2, y: 0.2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1868271698448968
 GameObject:
   m_ObjectHideFlags: 0
