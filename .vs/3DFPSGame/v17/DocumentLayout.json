@@ -3,36 +3,36 @@
   "WorkspaceRootPath": "D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F029730F-DDBD-3A3E-FDAA-A8DA1FB02F1A}|Assembly-CSharp.csproj|d:\\semester 6\\ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng game\\projects\\3dfpsgame\\assets\\fpsshooter\\scripts\\enemy\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F029730F-DDBD-3A3E-FDAA-A8DA1FB02F1A}|Assembly-CSharp.csproj|D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\assets\\fpsshooter\\scripts\\enemy\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F029730F-DDBD-3A3E-FDAA-A8DA1FB02F1A}|Assembly-CSharp.csproj|solutionrelative:assets\\fpsshooter\\scripts\\enemy\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F029730F-DDBD-3A3E-FDAA-A8DA1FB02F1A}|Assembly-CSharp.csproj|d:\\semester 6\\ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng game\\projects\\3dfpsgame\\assets\\fpsshooter\\scripts\\enemy\\states\\chasestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F029730F-DDBD-3A3E-FDAA-A8DA1FB02F1A}|Assembly-CSharp.csproj|solutionrelative:assets\\fpsshooter\\scripts\\enemy\\states\\chasestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F029730F-DDBD-3A3E-FDAA-A8DA1FB02F1A}|Assembly-CSharp.csproj|D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\assets\\fpsshooter\\scripts\\enemy\\states\\attackstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F029730F-DDBD-3A3E-FDAA-A8DA1FB02F1A}|Assembly-CSharp.csproj|d:\\semester 6\\ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng game\\projects\\3dfpsgame\\assets\\fpsshooter\\scripts\\enemy\\states\\attackstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F029730F-DDBD-3A3E-FDAA-A8DA1FB02F1A}|Assembly-CSharp.csproj|solutionrelative:assets\\fpsshooter\\scripts\\enemy\\states\\attackstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F029730F-DDBD-3A3E-FDAA-A8DA1FB02F1A}|Assembly-CSharp.csproj|d:\\semester 6\\ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng game\\projects\\3dfpsgame\\assets\\fpsshooter\\scripts\\player\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F029730F-DDBD-3A3E-FDAA-A8DA1FB02F1A}|Assembly-CSharp.csproj|solutionrelative:assets\\fpsshooter\\scripts\\player\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F029730F-DDBD-3A3E-FDAA-A8DA1FB02F1A}|Assembly-CSharp.csproj|D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\assets\\fpsshooter\\scripts\\enemy\\statemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F029730F-DDBD-3A3E-FDAA-A8DA1FB02F1A}|Assembly-CSharp.csproj|solutionrelative:assets\\fpsshooter\\scripts\\enemy\\statemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F029730F-DDBD-3A3E-FDAA-A8DA1FB02F1A}|Assembly-CSharp.csproj|D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\assets\\fpsshooter\\scripts\\enemy\\states\\patrolstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F029730F-DDBD-3A3E-FDAA-A8DA1FB02F1A}|Assembly-CSharp.csproj|solutionrelative:assets\\fpsshooter\\scripts\\enemy\\states\\patrolstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F029730F-DDBD-3A3E-FDAA-A8DA1FB02F1A}|Assembly-CSharp.csproj|D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\assets\\fpsshooter\\scripts\\enemy\\path.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F029730F-DDBD-3A3E-FDAA-A8DA1FB02F1A}|Assembly-CSharp.csproj|solutionrelative:assets\\fpsshooter\\scripts\\enemy\\path.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F029730F-DDBD-3A3E-FDAA-A8DA1FB02F1A}|Assembly-CSharp.csproj|D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\assets\\fpsshooter\\scripts\\enemy\\statemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F029730F-DDBD-3A3E-FDAA-A8DA1FB02F1A}|Assembly-CSharp.csproj|solutionrelative:assets\\fpsshooter\\scripts\\enemy\\statemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F029730F-DDBD-3A3E-FDAA-A8DA1FB02F1A}|Assembly-CSharp.csproj|D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\assets\\fpsshooter\\scripts\\enemy\\states\\chasestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F029730F-DDBD-3A3E-FDAA-A8DA1FB02F1A}|Assembly-CSharp.csproj|solutionrelative:assets\\fpsshooter\\scripts\\enemy\\states\\chasestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F029730F-DDBD-3A3E-FDAA-A8DA1FB02F1A}|Assembly-CSharp.csproj|D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\assets\\fpsshooter\\scripts\\enemy\\states\\basestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F029730F-DDBD-3A3E-FDAA-A8DA1FB02F1A}|Assembly-CSharp.csproj|solutionrelative:assets\\fpsshooter\\scripts\\enemy\\states\\basestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F029730F-DDBD-3A3E-FDAA-A8DA1FB02F1A}|Assembly-CSharp.csproj|D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\assets\\fpsshooter\\scripts\\player\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F029730F-DDBD-3A3E-FDAA-A8DA1FB02F1A}|Assembly-CSharp.csproj|solutionrelative:assets\\fpsshooter\\scripts\\player\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F029730F-DDBD-3A3E-FDAA-A8DA1FB02F1A}|Assembly-CSharp.csproj|D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\assets\\fpsshooter\\scripts\\enemy\\path.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F029730F-DDBD-3A3E-FDAA-A8DA1FB02F1A}|Assembly-CSharp.csproj|solutionrelative:assets\\fpsshooter\\scripts\\enemy\\path.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,20 +46,46 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "PlayerHealth.cs",
               "DocumentMoniker": "D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\Assets\\FPSShooter\\Scripts\\Player\\PlayerHealth.cs",
               "RelativeDocumentMoniker": "Assets\\FPSShooter\\Scripts\\Player\\PlayerHealth.cs",
               "ToolTip": "D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\Assets\\FPSShooter\\Scripts\\Player\\PlayerHealth.cs",
               "RelativeToolTip": "Assets\\FPSShooter\\Scripts\\Player\\PlayerHealth.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAcwDIAAAA6AAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwBcAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-24T09:03:14.956Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "StateMachine.cs",
+              "DocumentMoniker": "D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\Assets\\FPSShooter\\Scripts\\Enemy\\StateMachine.cs",
+              "RelativeDocumentMoniker": "Assets\\FPSShooter\\Scripts\\Enemy\\StateMachine.cs",
+              "ToolTip": "D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\Assets\\FPSShooter\\Scripts\\Enemy\\StateMachine.cs",
+              "RelativeToolTip": "Assets\\FPSShooter\\Scripts\\Enemy\\StateMachine.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAuwCUAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T03:36:16.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BaseState.cs",
+              "DocumentMoniker": "D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\Assets\\FPSShooter\\Scripts\\Enemy\\States\\BaseState.cs",
+              "RelativeDocumentMoniker": "Assets\\FPSShooter\\Scripts\\Enemy\\States\\BaseState.cs",
+              "ToolTip": "D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\Assets\\FPSShooter\\Scripts\\Enemy\\States\\BaseState.cs",
+              "RelativeToolTip": "Assets\\FPSShooter\\Scripts\\Enemy\\States\\BaseState.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T03:34:41.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "ChaseState.cs",
               "DocumentMoniker": "D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\Assets\\FPSShooter\\Scripts\\Enemy\\States\\ChaseState.cs",
               "RelativeDocumentMoniker": "Assets\\FPSShooter\\Scripts\\Enemy\\States\\ChaseState.cs",
@@ -72,44 +98,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "StateMachine.cs",
-              "DocumentMoniker": "D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\Assets\\FPSShooter\\Scripts\\Enemy\\StateMachine.cs",
-              "RelativeDocumentMoniker": "Assets\\FPSShooter\\Scripts\\Enemy\\StateMachine.cs",
-              "ToolTip": "D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\Assets\\FPSShooter\\Scripts\\Enemy\\StateMachine.cs",
-              "RelativeToolTip": "Assets\\FPSShooter\\Scripts\\Enemy\\StateMachine.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAoAAAA",
+              "DocumentIndex": 1,
+              "Title": "AttackState.cs",
+              "DocumentMoniker": "D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\Assets\\FPSShooter\\Scripts\\Enemy\\States\\AttackState.cs",
+              "RelativeDocumentMoniker": "Assets\\FPSShooter\\Scripts\\Enemy\\States\\AttackState.cs",
+              "ToolTip": "D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\Assets\\FPSShooter\\Scripts\\Enemy\\States\\AttackState.cs",
+              "RelativeToolTip": "Assets\\FPSShooter\\Scripts\\Enemy\\States\\AttackState.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFQAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T03:36:16.78Z",
+              "WhenOpened": "2024-05-24T07:39:38.574Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "BaseState.cs",
-              "DocumentMoniker": "D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\Assets\\FPSShooter\\Scripts\\Enemy\\States\\BaseState.cs",
-              "RelativeDocumentMoniker": "Assets\\FPSShooter\\Scripts\\Enemy\\States\\BaseState.cs",
-              "ToolTip": "D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\Assets\\FPSShooter\\Scripts\\Enemy\\States\\BaseState.cs",
-              "RelativeToolTip": "Assets\\FPSShooter\\Scripts\\Enemy\\States\\BaseState.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAA6wAIAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T03:34:41.909Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "PatrolState.cs",
               "DocumentMoniker": "D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\Assets\\FPSShooter\\Scripts\\Enemy\\States\\PatrolState.cs",
               "RelativeDocumentMoniker": "Assets\\FPSShooter\\Scripts\\Enemy\\States\\PatrolState.cs",
               "ToolTip": "D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\Assets\\FPSShooter\\Scripts\\Enemy\\States\\PatrolState.cs",
               "RelativeToolTip": "Assets\\FPSShooter\\Scripts\\Enemy\\States\\PatrolState.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAA0wDUAAAAAAAAA",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwB0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T03:57:16.328Z"
+              "WhenOpened": "2024-05-24T03:57:16.328Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Path.cs",
               "DocumentMoniker": "D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\Assets\\FPSShooter\\Scripts\\Enemy\\Path.cs",
               "RelativeDocumentMoniker": "Assets\\FPSShooter\\Scripts\\Enemy\\Path.cs",
@@ -121,26 +136,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AttackState.cs",
-              "DocumentMoniker": "D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\Assets\\FPSShooter\\Scripts\\Enemy\\States\\AttackState.cs",
-              "RelativeDocumentMoniker": "Assets\\FPSShooter\\Scripts\\Enemy\\States\\AttackState.cs",
-              "ToolTip": "D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\Assets\\FPSShooter\\Scripts\\Enemy\\States\\AttackState.cs",
-              "RelativeToolTip": "Assets\\FPSShooter\\Scripts\\Enemy\\States\\AttackState.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAowBcAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T07:39:38.574Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Enemy.cs",
               "DocumentMoniker": "D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\Assets\\FPSShooter\\Scripts\\Enemy\\Enemy.cs",
               "RelativeDocumentMoniker": "Assets\\FPSShooter\\Scripts\\Enemy\\Enemy.cs",
               "ToolTip": "D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\Assets\\FPSShooter\\Scripts\\Enemy\\Enemy.cs",
               "RelativeToolTip": "Assets\\FPSShooter\\Scripts\\Enemy\\Enemy.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAIwC4AAABCAAAA",
+              "ViewState": "AQIAACsAAAAAAAAAAAAuwFIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-24T03:43:26.629Z",
               "EditorCaption": ""

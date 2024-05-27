@@ -20,7 +20,7 @@ public class Enemy : MonoBehaviour
     public float fieldOfView = 85f;
 
     public float walkSpeed = 3f;  // Adjust as needed
-    public float runSpeed = 6f;   // Add running speed
+    public float runSpeed = 4f;   // Add running speed
     public float attackRange = 2f;  // Distance at which enemy attacks
     public float attackDamage = 10f;
 
@@ -55,19 +55,19 @@ public class Enemy : MonoBehaviour
 
     public bool CanSeePlayer()
     {
-        if(player != null)
+        if (player != null)
         {
             if (Vector3.Distance(transform.position, player.transform.position) < sightDistance)
             {
                 Vector3 targetDirection = player.transform.position - transform.position;
                 float angleToPlayer = Vector3.Angle(targetDirection, transform.forward);
-                if(angleToPlayer >= -fieldOfView && angleToPlayer <= fieldOfView)
+                if (angleToPlayer >= -fieldOfView && angleToPlayer <= fieldOfView)
                 {
                     Ray ray = new Ray(transform.position, targetDirection);
                     RaycastHit hitInfo = new RaycastHit();
-                    if(Physics.Raycast(ray, out hitInfo, sightDistance))
+                    if (Physics.Raycast(ray, out hitInfo, sightDistance))
                     {
-                        if(hitInfo.transform.gameObject == player)
+                        if (hitInfo.transform.gameObject == player)
                         {
                             return true;
                         }

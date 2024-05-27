@@ -21,13 +21,13 @@ public class StateMachine : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(activeState != null)
+        if (activeState != null)
         {
             activeState.Perform();
         }
@@ -37,12 +37,12 @@ public class StateMachine : MonoBehaviour
     {
         if (activeState != null)
         {
-            activeState.Exit(); 
+            activeState.Exit();
         }
 
         activeState = newState;
 
-        if(activeState != null)
+        if (activeState != null)
         {
             activeState.stateMachine = this;
             activeState.enemy = GetComponent<Enemy>();

@@ -8,43 +8,55 @@ public class AttackState : BaseState
     public float attackCooldown = 2f;
     private bool hasAttacked = false;
 
-    private Collider attackCollider;
-    private MonoBehaviour monoBehaviour; // Added for Invoke and GetComponentInChildren
-
     public override void Enter()
     {
         animator = enemy.GetComponent<Animator>();
         animator.SetBool("IsAttacking", true);
-        attackTimer = 0f;  // Reset attack timer
-        hasAttacked = false; // Reset attack flag
+        attackTimer = 0f;
+        hasAttacked = false;
 
-        // Find the PlayerHealth component of the player object
-        playerHealth = enemy.player.GetComponent<PlayerHealth>();
-
-        // Get the MonoBehaviour component to access GetComponent and Invoke
-        monoBehaviour = enemy.GetComponent<MonoBehaviour>();
-        attackCollider = monoBehaviour.GetComponentInChildren<Collider>();
-        if (attackCollider != null)
+        // Ensure the player reference is valid
+        if (enemy.player != null)
         {
-            attackCollider.enabled = false; // Disable initially
+            playerHealth = enemy.player.GetComponent<PlayerHealth>();
+            Debug.Log("PlayerHealth component found and referenced.");
+        }
+        else
+        {
+            Debug.LogWarning("Player not found in AttackState!");
+        }
+
+        // Ensuring the Rigidbody is kinematic
+        Rigidbody rb = enemy.GetComponent<Rigidbody>();
+        if (rb != null)
+        {
+            rb.isKinematic = true;
         }
     }
 
     public override void Perform()
     {
-        attackTimer += Time.deltaTime;
-        if (attackTimer >= attackCooldown)
+        if (playerHealth == null) // If playerHealth was not found, exit
         {
-            if (enemy.CanSeePlayer())
+            stateMachine.ChangeState(stateMachine.chaseState);
+            return;
+        }
+
+        attackTimer += Time.deltaTime;
+        if (attackTimer >= attackCooldown && !hasAttacked)
+        {
+            // Check if player is still in range to attack
+            float distanceToPlayer = Vector3.Distance(enemy.transform.position, playerHealth.transform.position);
+            Debug.Log($"Distance to player: {distanceToPlayer}");
+            if (distanceToPlayer <= enemy.attackRange)
             {
-                stateMachine.ChangeState(stateMachine.chaseState);
+                animator.SetTrigger("Attack");
+                attackTimer = 0f;
             }
             else
             {
-                stateMachine.ChangeState(stateMachine.patrolState);
+                stateMachine.ChangeState(stateMachine.chaseState);
             }
-
-            attackTimer = 0f;
         }
     }
 
@@ -52,34 +64,27 @@ public class AttackState : BaseState
     {
         animator.SetBool("IsAttacking", false);
         hasAttacked = false;
-        if (attackCollider != null)
-        {
-            attackCollider.enabled = false;
-        }
     }
 
+    // Animation Event method 
     public void OnAttackHitEvent()
     {
         if (!hasAttacked && playerHealth != null)
         {
-            if (attackCollider != null)
+            // Manually check if player is in attack range (again, in case player moved during animation)
+            float distanceToPlayer = Vector3.Distance(enemy.transform.position, playerHealth.transform.position);
+            Debug.Log($"OnAttackHitEvent triggered. Distance to player: {distanceToPlayer}");
+            if (distanceToPlayer <= enemy.attackRange)
             {
-                attackCollider.enabled = true;
-
-                // Manually check if player is in attack range
-                if (Vector3.Distance(enemy.transform.position, playerHealth.transform.position) <= enemy.attackRange)
-                {
-                    playerHealth.TakeDamage(enemy.attackDamage);
-                    hasAttacked = true;
-                }
-
-                monoBehaviour.Invoke("DisableAttackCollider", 0.1f); // Use MonoBehaviour for Invoke
+                Debug.Log($"Player within attack range. Dealing {enemy.attackDamage} damage.");
+                playerHealth.TakeDamage(enemy.attackDamage);
+                hasAttacked = true;
+            }
+            else
+            {
+                // Player moved out of attack range during animation, transition back to chase state
+                stateMachine.ChangeState(stateMachine.chaseState);
             }
         }
-    }
-
-    private void DisableAttackCollider()
-    {
-        attackCollider.enabled = false;
     }
 }

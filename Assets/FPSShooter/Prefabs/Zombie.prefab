@@ -1441,6 +1441,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4932267959246028}
   - component: {fileID: 95090565265420528}
+  - component: {fileID: 5864313385070401333}
   m_Layer: 0
   m_Name: Zombie
   m_TagString: Untagged
@@ -1487,6 +1488,27 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!65 &5864313385070401333
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352753540370996}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.4691338, y: 1.74, z: 0.33}
+  m_Center: {x: 0.022652177, y: 0.90999997, z: -2.3597194e-11}
 --- !u!1 &1354594622779090
 GameObject:
   m_ObjectHideFlags: 0
