@@ -1,6 +1,4 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -15,6 +13,7 @@ public class Enemy : MonoBehaviour
     private string currentState;
     public Path path;
 
+    public Animator animator;
     public GameObject player;
     public float sightDistance = 30f;
     public float fieldOfView = 85f;
@@ -24,6 +23,10 @@ public class Enemy : MonoBehaviour
     public float attackRange = 2f;  // Distance at which enemy attacks
     public float attackDamage = 10f;
 
+    public float maxHealth = 100f;
+    public float currentHealth;
+    private bool isDead = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +34,8 @@ public class Enemy : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         stateMachine.Initialise();
         player = GameObject.FindGameObjectWithTag("Player");
+        currentHealth = maxHealth; // Initialize health
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -77,5 +82,39 @@ public class Enemy : MonoBehaviour
             }
         }
         return false;
+    }
+
+    // Function to take damage
+    public void TakeDamage(float damage)
+    {
+        currentHealth -= damage;
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
+    }
+
+    // Function to handle death
+    public void Die()
+    {
+        if (!isDead)
+        {
+            isDead = true;
+            animator.SetBool("IsDead", true);
+            animator.SetBool("IsWalking", false);
+            animator.SetBool("IsIdle", false);
+            animator.SetBool("IsRunning", false);
+            animator.SetBool("IsAttacking", false);
+            walkSpeed = 0;
+            runSpeed = 0;
+            agent.isStopped = true;
+            StartCoroutine(DestroyAfterDelay(180f)); // Start coroutine to destroy object after 3 minutes
+        }
+    }
+
+    private IEnumerator DestroyAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        Destroy(gameObject);
     }
 }

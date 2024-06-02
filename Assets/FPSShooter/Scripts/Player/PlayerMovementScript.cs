@@ -377,8 +377,6 @@ public class PlayerMovementScript : MonoBehaviour
             }
         }
     }
-    private GameObject myBloodEffect;
-
 
     [Header("Player SOUNDS")]
     [Tooltip("Jump sound when player jumps.")]

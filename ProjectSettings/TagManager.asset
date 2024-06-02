@@ -9,6 +9,8 @@ TagManager:
   - BulletSpawn
   - LevelPart
   - Dummie
+  - Enemy
+  - Vaccine
   layers:
   - Default
   - TransparentFX

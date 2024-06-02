@@ -20,7 +20,7 @@ public class ContainerDoor_Left : Interactable
         
     }
 
-    protected override void Interact()
+    public override void Interact()
     {
         doorOpen = !doorOpen;
         door.GetComponent<Animator>().SetBool("isOpen", doorOpen);

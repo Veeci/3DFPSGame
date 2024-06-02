@@ -67,9 +67,12 @@
     <Compile Include="Assets\FPSShooter\Scripts\InteractableHandling\InteractionEvent.cs" />
     <Compile Include="Assets\FPSShooter\Scripts\Player\PlayerUI_Interact.cs" />
     <Compile Include="Assets\FPSShooter\Scripts\InteractableObjects\ContainerDoor_Left.cs" />
+    <Compile Include="Assets\FPSShooter\Scripts\InteractableObjects\HealthBox.cs" />
     <Compile Include="Assets\FPSShooter\Scripts\InteractableHandling\Interactable.cs" />
     <Compile Include="Assets\FPSShooter\Scripts\Gun\GunInventory.cs" />
     <Compile Include="Assets\FPSShooter\PlayerInput\PlayerInput.cs" />
+    <Compile Include="Assets\FPSShooter\Scripts\InteractableObjects\Vaccine.cs" />
+    <Compile Include="Assets\FPSShooter\Scripts\InteractableObjects\AmmoBox.cs" />
     <Compile Include="Assets\FPSShooter\Scripts\Player\MouseLookScript.cs" />
     <Compile Include="Assets\FPSShooter\Scripts\Enemy\States\ChaseState.cs" />
     <Compile Include="Assets\FPSShooter\Scripts\Gun\BulletScript.cs" />

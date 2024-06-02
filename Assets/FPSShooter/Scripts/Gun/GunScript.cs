@@ -6,6 +6,9 @@ public enum GunStyles{
 	nonautomatic,automatic
 }
 public class GunScript : MonoBehaviour {
+
+	float damageAmount = 20f;
+
 	[Tooltip("Selects type of waepon to shoot rapidly or one bullet per click.")]
 	public GunStyles currentStyle;
 	[HideInInspector]
@@ -20,11 +23,11 @@ public class GunScript : MonoBehaviour {
 
 	[Header("Bullet properties")]
 	[Tooltip("Preset value to tell with how many bullets will our waepon spawn aside.")]
-	public float bulletsIHave = 20;
+	public float bulletsIHave = 40;
 	[Tooltip("Preset value to tell with how much bullets will our waepon spawn inside rifle.")]
-	public float bulletsInTheGun = 5;
+	public float bulletsInTheGun = 20;
 	[Tooltip("Preset value to tell how much bullets can one magazine carry.")]
-	public float amountOfBulletsPerLoad = 5;
+	public float amountOfBulletsPerLoad = 20;
 
 	private Transform player;
 	private Camera cameraComponent;
@@ -32,10 +35,17 @@ public class GunScript : MonoBehaviour {
 
 	private PlayerMovementScript pmS;
 
-	/*
+    void Start()
+    {
+        bulletsIHave = 20;
+        bulletsInTheGun = 40;
+    }
+
+
+    /*
 	 * Collection the variables upon awake that we need.
 	 */
-	void Awake(){
+    void Awake(){
 
 
 		mls = GameObject.FindGameObjectWithTag("Player").GetComponent<MouseLookScript>();
@@ -252,29 +262,26 @@ public class GunScript : MonoBehaviour {
 	[HideInInspector]
 	public Transform mainCamera;
 	private Camera secondCamera;
-	/*
+    /*
 	 * Calculatin the weapon position accordingly to the player position and rotation.
 	 * After calculation the recoil amount are decreased to 0.
 	 */
-	void PositionGun(){
-		transform.position = Vector3.SmoothDamp(transform.position,
-			mainCamera.transform.position  - 
-			(mainCamera.transform.right * (currentGunPosition.x + currentRecoilXPos)) + 
-			(mainCamera.transform.up * (currentGunPosition.y+ currentRecoilYPos)) + 
-			(mainCamera.transform.forward * (currentGunPosition.z + currentRecoilZPos)),ref velV, 0);
+    void PositionGun()
+    {
+        transform.position = Vector3.SmoothDamp(transform.position,
+            mainCamera.transform.position -
+            (mainCamera.transform.right * (currentGunPosition.x + currentRecoilXPos)) +
+            (mainCamera.transform.up * (currentGunPosition.y + currentRecoilYPos)) +
+            (mainCamera.transform.forward * (currentGunPosition.z + currentRecoilZPos)), ref velV, 0);
 
+        pmS.cameraPosition = new Vector3(currentRecoilXPos, currentRecoilYPos, 0);
 
+        currentRecoilZPos = Mathf.SmoothDamp(currentRecoilZPos, 0, ref velocity_z_recoil, recoilOverTime_z);
+        currentRecoilXPos = Mathf.SmoothDamp(currentRecoilXPos, 0, ref velocity_x_recoil, recoilOverTime_x);
+        currentRecoilYPos = Mathf.SmoothDamp(currentRecoilYPos, 0, ref velocity_y_recoil, recoilOverTime_y);
+    }
 
-		pmS.cameraPosition = new Vector3(currentRecoilXPos,currentRecoilYPos, 0);
-
-		currentRecoilZPos = Mathf.SmoothDamp(currentRecoilZPos, 0, ref velocity_z_recoil, recoilOverTime_z);
-		currentRecoilXPos = Mathf.SmoothDamp(currentRecoilXPos, 0, ref velocity_x_recoil, recoilOverTime_x);
-		currentRecoilYPos = Mathf.SmoothDamp(currentRecoilYPos, 0, ref velocity_y_recoil, recoilOverTime_y);
-
-	}
-
-
-	[Header("Rotation")]
+    [Header("Rotation")]
 	private Vector2 velocityGunRotate;
 	private float gunWeightX,gunWeightY;
 	[Tooltip("The time waepon will lag behind the camera view best set to '0'.")]
@@ -311,21 +318,21 @@ public class GunScript : MonoBehaviour {
 	private float currentRecoilZPos;
 	private float currentRecoilXPos;
 	private float currentRecoilYPos;
-	/*
+    /*
 	 * Called from ShootMethod();, upon shooting the recoil amount will increase.
 	 */
-	public void RecoilMath(){
-		currentRecoilZPos -= recoilAmount_z;
-		currentRecoilXPos -= (Random.value - 0.5f) * recoilAmount_x;
-		currentRecoilYPos -= (Random.value - 0.5f) * recoilAmount_y;
-		mls.wantedCameraXRotation -= Mathf.Abs(currentRecoilYPos * gunPrecision);
-		mls.wantedYRotation -= (currentRecoilXPos * gunPrecision);		 
+    public void RecoilMath()
+    {
+        currentRecoilZPos -= recoilAmount_z;
+        currentRecoilXPos -= (Random.value - 0.5f) * recoilAmount_x;
+        currentRecoilYPos -= (Random.value - 0.5f) * recoilAmount_y;
+        mls.wantedCameraXRotation -= Mathf.Abs(currentRecoilYPos * gunPrecision);
+        mls.wantedYRotation -= (currentRecoilXPos * gunPrecision);
 
-		expandValues_crosshair += new Vector2(6,12);
+        expandValues_crosshair += new Vector2(6, 12);
+    }
 
-	}
-
-	[Header("Shooting setup - MUSTDO")]
+    [Header("Shooting setup - MUSTDO")]
 	[HideInInspector] public GameObject bulletSpawnPlace;
 	[Tooltip("Bullet prefab that this waepon will shoot.")]
 	public GameObject bullet;
@@ -413,51 +420,72 @@ public class GunScript : MonoBehaviour {
 	public GameObject muzzelSpawn;
 	private GameObject holdFlash;
 	private GameObject holdSmoke;
-	/*
+    /*
 	 * Called from Shooting();
 	 * Creates bullets and muzzle flashes and calls for Recoil.
 	 */
-	private void ShootMethod(){
-		if(waitTillNextFire <= 0 && !reloading && pmS.maxSpeed < 5){
+    /*
+* Called from Shooting();
+* Creates bullets and muzzle flashes and calls for Recoil.
+*/
+    private void ShootMethod()
+    {
+        if (waitTillNextFire <= 0 && !reloading && pmS.maxSpeed < 5)
+        {
+            if (bulletsInTheGun > 0)
+            {
+                int randomNumberForMuzzelFlash = Random.Range(0, 5);
+                if (bullet)
+                    Instantiate(bullet, bulletSpawnPlace.transform.position, bulletSpawnPlace.transform.rotation);
+                else
+                    print("Missing the bullet prefab");
 
-			if(bulletsInTheGun > 0){
+                holdFlash = Instantiate(muzzelFlash[randomNumberForMuzzelFlash], muzzelSpawn.transform.position, muzzelSpawn.transform.rotation * Quaternion.Euler(0, 0, 90)) as GameObject;
+                holdFlash.transform.parent = muzzelSpawn.transform;
+                if (shoot_sound_source)
+                    shoot_sound_source.Play();
+                else
+                    print("Missing 'Shoot Sound Source'.");
 
-				int randomNumberForMuzzelFlash = Random.Range(0,5);
-				if (bullet)
-					Instantiate (bullet, bulletSpawnPlace.transform.position, bulletSpawnPlace.transform.rotation);
-				else
-					print ("Missing the bullet prefab");
-				holdFlash = Instantiate(muzzelFlash[randomNumberForMuzzelFlash], muzzelSpawn.transform.position /*- muzzelPosition*/, muzzelSpawn.transform.rotation * Quaternion.Euler(0,0,90) ) as GameObject;
-				holdFlash.transform.parent = muzzelSpawn.transform;
-				if (shoot_sound_source)
-					shoot_sound_source.Play ();
-				else
-					print ("Missing 'Shoot Sound Source'.");
+                RecoilMath();
 
-				RecoilMath();
+                waitTillNextFire = 1;
+                bulletsInTheGun -= 1;
 
-				waitTillNextFire = 1;
-				bulletsInTheGun -= 1;
-			}
-				
-			else{
-				//if(!aiming)
-				StartCoroutine("Reload_Animation");
-				//if(emptyClip_sound_source)
-				//	emptyClip_sound_source.Play();
-			}
+                // Call HitEnemy function to apply damage to the enemy
+                RaycastHit hit;
+                if (Physics.Raycast(bulletSpawnPlace.transform.position, bulletSpawnPlace.transform.forward, out hit))
+                {
+                    GameObject hitObject = hit.transform.gameObject;
+                    HitEnemy(hitObject);
+                }
+            }
+            else
+            {
+                StartCoroutine("Reload_Animation");
+            }
+        }
+        waitTillNextFire -= roundsPerSecond * Time.deltaTime;
+    }
 
-		}
+    private void HitEnemy(GameObject enemy)
+    {
+        Enemy enemyScript = enemy.GetComponent<Enemy>();
+        if (enemyScript != null)
+        {
+            enemyScript.TakeDamage(damageAmount);
+            if (enemyScript.currentHealth <= 0)
+            {
+				enemyScript.Die();
+            }
+        }
+    }
 
-	}
-
-
-
-	/*
+    /*
 	* Reloading, setting the reloading to animator,
 	* Waiting for 2 seconds and then seeting the reloaded clip.
 	*/
-	[Header("reload time after anima")]
+    [Header("reload time after anima")]
 	[Tooltip("Time that passes after reloading. Depends on your reload animation length, because reloading can be interrupted via meele attack or running. So any action before this finishes will interrupt reloading.")]
 	public float reloadChangeBulletsTime;
 	IEnumerator Reload_Animation(){
@@ -513,7 +541,7 @@ public class GunScript : MonoBehaviour {
 	 */
 	[Tooltip("HUD bullets to display bullet count on screen. Will be find under name 'HUD_bullets' in scene.")]
 	public TextMesh HUD_bullets;
-	void OnGUI(){
+	public void OnGUI(){
 		if(!HUD_bullets){
 			try{
 				HUD_bullets = GameObject.Find("HUD_bullets").GetComponent<TextMesh>();
