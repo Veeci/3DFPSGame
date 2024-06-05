@@ -3,28 +3,28 @@
   "WorkspaceRootPath": "D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F029730F-DDBD-3A3E-FDAA-A8DA1FB02F1A}|Assembly-CSharp.csproj|D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\assets\\fpsshooter\\scripts\\gun\\gunscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F029730F-DDBD-3A3E-FDAA-A8DA1FB02F1A}|Assembly-CSharp.csproj|solutionrelative:assets\\fpsshooter\\scripts\\gun\\gunscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F029730F-DDBD-3A3E-FDAA-A8DA1FB02F1A}|Assembly-CSharp.csproj|d:\\semester 6\\ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng game\\projects\\3dfpsgame\\assets\\fpsshooter\\scripts\\interactableobjects\\ammobox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F029730F-DDBD-3A3E-FDAA-A8DA1FB02F1A}|Assembly-CSharp.csproj|solutionrelative:assets\\fpsshooter\\scripts\\interactableobjects\\ammobox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F029730F-DDBD-3A3E-FDAA-A8DA1FB02F1A}|Assembly-CSharp.csproj|d:\\semester 6\\ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng game\\projects\\3dfpsgame\\assets\\fpsshooter\\scripts\\interactableobjects\\healthbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F029730F-DDBD-3A3E-FDAA-A8DA1FB02F1A}|Assembly-CSharp.csproj|solutionrelative:assets\\fpsshooter\\scripts\\interactableobjects\\healthbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F029730F-DDBD-3A3E-FDAA-A8DA1FB02F1A}|Assembly-CSharp.csproj|d:\\semester 6\\ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng game\\projects\\3dfpsgame\\assets\\fpsshooter\\scripts\\player\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F029730F-DDBD-3A3E-FDAA-A8DA1FB02F1A}|Assembly-CSharp.csproj|solutionrelative:assets\\fpsshooter\\scripts\\player\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F029730F-DDBD-3A3E-FDAA-A8DA1FB02F1A}|Assembly-CSharp.csproj|D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\assets\\fpsshooter\\scripts\\interactableobjects\\containerdoor_left.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F029730F-DDBD-3A3E-FDAA-A8DA1FB02F1A}|Assembly-CSharp.csproj|solutionrelative:assets\\fpsshooter\\scripts\\interactableobjects\\containerdoor_left.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F029730F-DDBD-3A3E-FDAA-A8DA1FB02F1A}|Assembly-CSharp.csproj|D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\assets\\fpsshooter\\scripts\\interactableobjects\\healthbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F029730F-DDBD-3A3E-FDAA-A8DA1FB02F1A}|Assembly-CSharp.csproj|solutionrelative:assets\\fpsshooter\\scripts\\interactableobjects\\healthbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F029730F-DDBD-3A3E-FDAA-A8DA1FB02F1A}|Assembly-CSharp.csproj|D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\assets\\fpsshooter\\scripts\\interactableobjects\\ammobox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F029730F-DDBD-3A3E-FDAA-A8DA1FB02F1A}|Assembly-CSharp.csproj|solutionrelative:assets\\fpsshooter\\scripts\\interactableobjects\\ammobox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F029730F-DDBD-3A3E-FDAA-A8DA1FB02F1A}|Assembly-CSharp.csproj|D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\assets\\fpsshooter\\scripts\\gun\\gunscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F029730F-DDBD-3A3E-FDAA-A8DA1FB02F1A}|Assembly-CSharp.csproj|solutionrelative:assets\\fpsshooter\\scripts\\gun\\gunscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F029730F-DDBD-3A3E-FDAA-A8DA1FB02F1A}|Assembly-CSharp.csproj|D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\assets\\fpsshooter\\scripts\\gun\\bulletscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F029730F-DDBD-3A3E-FDAA-A8DA1FB02F1A}|Assembly-CSharp.csproj|solutionrelative:assets\\fpsshooter\\scripts\\gun\\bulletscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F029730F-DDBD-3A3E-FDAA-A8DA1FB02F1A}|Assembly-CSharp.csproj|D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\assets\\fpsshooter\\scripts\\interactableobjects\\containerdoor_left.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F029730F-DDBD-3A3E-FDAA-A8DA1FB02F1A}|Assembly-CSharp.csproj|solutionrelative:assets\\fpsshooter\\scripts\\interactableobjects\\containerdoor_left.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F029730F-DDBD-3A3E-FDAA-A8DA1FB02F1A}|Assembly-CSharp.csproj|D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\assets\\fpsshooter\\scripts\\interactableobjects\\vaccine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,17 +38,29 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "HealthBox.cs",
+              "DocumentMoniker": "D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\Assets\\FPSShooter\\Scripts\\InteractableObjects\\HealthBox.cs",
+              "RelativeDocumentMoniker": "Assets\\FPSShooter\\Scripts\\InteractableObjects\\HealthBox.cs",
+              "ToolTip": "D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\Assets\\FPSShooter\\Scripts\\InteractableObjects\\HealthBox.cs",
+              "RelativeToolTip": "Assets\\FPSShooter\\Scripts\\InteractableObjects\\HealthBox.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T03:04:33.966Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "PlayerHealth.cs",
               "DocumentMoniker": "D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\Assets\\FPSShooter\\Scripts\\Player\\PlayerHealth.cs",
               "RelativeDocumentMoniker": "Assets\\FPSShooter\\Scripts\\Player\\PlayerHealth.cs",
               "ToolTip": "D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\Assets\\FPSShooter\\Scripts\\Player\\PlayerHealth.cs",
               "RelativeToolTip": "Assets\\FPSShooter\\Scripts\\Player\\PlayerHealth.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAcwCAAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-02T02:07:52.06Z",
               "EditorCaption": ""
@@ -56,45 +68,30 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "HealthBox.cs",
-              "DocumentMoniker": "D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\Assets\\FPSShooter\\Scripts\\InteractableObjects\\HealthBox.cs",
-              "RelativeDocumentMoniker": "Assets\\FPSShooter\\Scripts\\InteractableObjects\\HealthBox.cs",
-              "ToolTip": "D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\Assets\\FPSShooter\\Scripts\\InteractableObjects\\HealthBox.cs",
-              "RelativeToolTip": "Assets\\FPSShooter\\Scripts\\InteractableObjects\\HealthBox.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAA5wBYAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T02:06:42.023Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "AmmoBox.cs",
               "DocumentMoniker": "D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\Assets\\FPSShooter\\Scripts\\InteractableObjects\\AmmoBox.cs",
               "RelativeDocumentMoniker": "Assets\\FPSShooter\\Scripts\\InteractableObjects\\AmmoBox.cs",
               "ToolTip": "D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\Assets\\FPSShooter\\Scripts\\InteractableObjects\\AmmoBox.cs",
               "RelativeToolTip": "Assets\\FPSShooter\\Scripts\\InteractableObjects\\AmmoBox.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAQwAcAAAAAAAAA",
+              "ViewState": "AQIAACEAAAAAAAAAAAAQwCoAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T16:24:25.594Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-01T16:24:25.594Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "GunScript.cs",
               "DocumentMoniker": "D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\Assets\\FPSShooter\\Scripts\\Gun\\GunScript.cs",
               "RelativeDocumentMoniker": "Assets\\FPSShooter\\Scripts\\Gun\\GunScript.cs",
               "ToolTip": "D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\Assets\\FPSShooter\\Scripts\\Gun\\GunScript.cs",
               "RelativeToolTip": "Assets\\FPSShooter\\Scripts\\Gun\\GunScript.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAiwC8AAAADAAAA",
+              "ViewState": "AQIAAB8CAAAAAAAAAIAzwCkCAABTAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T15:55:09.127Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-01T15:55:09.127Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "BulletScript.cs",
               "DocumentMoniker": "D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\Assets\\FPSShooter\\Scripts\\Gun\\BulletScript.cs",
               "RelativeDocumentMoniker": "Assets\\FPSShooter\\Scripts\\Gun\\BulletScript.cs",
@@ -118,7 +115,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ContainerDoor_Left.cs",
               "DocumentMoniker": "D:\\Semester 6\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Game\\Projects\\3DFPSGame\\Assets\\FPSShooter\\Scripts\\InteractableObjects\\ContainerDoor_Left.cs",
               "RelativeDocumentMoniker": "Assets\\FPSShooter\\Scripts\\InteractableObjects\\ContainerDoor_Left.cs",
@@ -126,8 +123,7 @@
               "RelativeToolTip": "Assets\\FPSShooter\\Scripts\\InteractableObjects\\ContainerDoor_Left.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAIwBwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T14:20:30.616Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-01T14:20:30.616Z"
             }
           ]
         }
