@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
@@ -65,7 +66,13 @@ public class PlayerHealth : MonoBehaviour
     {
         health -= damage;
         lerpTimer = 0f;
+        if(health <= 0f)
+        {
+            SceneManager.LoadScene("Lose", LoadSceneMode.Single);
+        }
+
     }
+
 
     public void GainHealth(float healAmount)
     {

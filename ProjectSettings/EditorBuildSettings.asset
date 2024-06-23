@@ -4,5 +4,20 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/FPSShooter/Scene/MainMenu.unity
+    guid: 0dc00cd3658d2c444b7114c162e16755
+  - enabled: 1
+    path: Assets/FPSShooter/Scene/EasyScene.unity
+    guid: f31902cd9070b184285b3130a24624b4
+  - enabled: 1
+    path: Assets/FPSShooter/Scene/NormalScene.unity
+    guid: d5c8340a7a63e39429766545ab7b9e2b
+  - enabled: 1
+    path: Assets/FPSShooter/Scene/Lose.unity
+    guid: 004773c90027b6444ab5b027aff28da7
+  - enabled: 1
+    path: Assets/FPSShooter/Scene/Win.unity
+    guid: 8f43bab6d3ba4154ca45d871f4412d6c
   m_configObjects: {}

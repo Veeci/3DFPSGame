@@ -30,15 +30,15 @@ public class BulletScript : MonoBehaviour
                     Instantiate(decalHitWall, hit.point + hit.normal * floatInfrontOfWall, Quaternion.LookRotation(hit.normal));
                     Destroy(gameObject);
                 }
-                if (hit.transform.tag == "Enemy") // Check if the hit object is an enemy
+                if (hit.transform.tag == "Enemy") 
                 {
-                    Enemy enemy = hit.transform.GetComponent<Enemy>(); // Get the enemy component
+                    Enemy enemy = hit.transform.GetComponent<Enemy>(); 
                     if (enemy != null)
                     {
-                        enemy.TakeDamage(10f); // Deal damage to the enemy (adjust damage as needed)
-                        Instantiate(bloodEffect, hit.point, Quaternion.LookRotation(hit.normal)); // Spawn blood effect
+                        enemy.TakeDamage(25f); 
+                        Instantiate(bloodEffect, hit.point, Quaternion.LookRotation(hit.normal));
                     }
-                    Destroy(gameObject); // Destroy the bullet
+                    Destroy(gameObject);
                 }
             }
             Destroy(gameObject);

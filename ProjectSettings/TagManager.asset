@@ -11,6 +11,7 @@ TagManager:
   - Dummie
   - Enemy
   - Vaccine
+  - AmmoBox
   layers:
   - Default
   - TransparentFX

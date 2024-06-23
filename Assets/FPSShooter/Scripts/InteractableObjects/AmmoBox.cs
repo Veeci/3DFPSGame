@@ -9,7 +9,6 @@ public class AmmoBox : Interactable
     [SerializeField]
     private GameObject ammoBox;
     private GunScript gunScript;
-    public float additionalAmmo;
 
     // Start is called before the first frame update
     void Start()
@@ -27,7 +26,7 @@ public class AmmoBox : Interactable
         }
         else
         {
-            gun = gunScript; // Assigning gunScript to gun
+            gun = gunScript;
         }
     }
 
@@ -41,6 +40,7 @@ public class AmmoBox : Interactable
     {
         if (gun != null)
         {
+            gun.TakeBullet(60f);
             ammoBox.SetActive(false);
         }
         else

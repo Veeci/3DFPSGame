@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Unity.VisualScripting;
+using UnityEngine.UIElements;
 //using UnityStandardAssets.ImageEffects;
 
 public enum GunStyles{
@@ -20,34 +22,31 @@ public class GunScript : MonoBehaviour {
 	[Tooltip("Speed is determined via gun because not every gun has same properties or weights so you MUST set up your speeds here")]
 	public int runningSpeed = 5;
 
-
 	[Header("Bullet properties")]
 	[Tooltip("Preset value to tell with how many bullets will our waepon spawn aside.")]
-	public float bulletsIHave = 40;
+	public float bulletsIHave;
 	[Tooltip("Preset value to tell with how much bullets will our waepon spawn inside rifle.")]
-	public float bulletsInTheGun = 20;
+	public float bulletsInTheGun;
 	[Tooltip("Preset value to tell how much bullets can one magazine carry.")]
 	public float amountOfBulletsPerLoad = 20;
 
 	private Transform player;
 	private Camera cameraComponent;
-	private Transform gunPlaceHolder;
 
 	private PlayerMovementScript pmS;
 
+	private float additionalBullet = 0f;
+
     void Start()
     {
-        bulletsIHave = 20;
-        bulletsInTheGun = 40;
+        bulletsIHave = 160f;
+        bulletsInTheGun = 80f;
     }
-
 
     /*
 	 * Collection the variables upon awake that we need.
 	 */
     void Awake(){
-
-
 		mls = GameObject.FindGameObjectWithTag("Player").GetComponent<MouseLookScript>();
 		player = mls.transform;
 		mainCamera = mls.myCamera;
@@ -64,9 +63,7 @@ public class GunScript : MonoBehaviour {
 
 		rotationLastY = mls.currentYRotation;
 		rotationLastX= mls.currentCameraXRotation;
-
 	}
-
 
 	[HideInInspector]
 	public Vector3 currentGunPosition;
@@ -91,7 +88,6 @@ public class GunScript : MonoBehaviour {
 	Update loop calling for methods that are descriped below where they are initiated.
 	*/
 	void Update(){
-
 		Animations();
 
 		GiveCameraScriptMySensitvity();
@@ -102,11 +98,9 @@ public class GunScript : MonoBehaviour {
 		MeeleAttack();
 		LockCameraWhileMelee ();
 
-		Sprint(); //iff we have the gun you sprint from here, if we are gunless then its called from movement script
+		Sprint();
 
 		CrossHairExpansionWhenWalking();
-
-
 	}
 
 	/*
@@ -359,7 +353,6 @@ public class GunScript : MonoBehaviour {
 		waitTillNextFire -= roundsPerSecond * Time.deltaTime;
 	}
 
-
 	[HideInInspector]	public float recoilAmount_z = 0.5f;
 	[HideInInspector]	public float recoilAmount_x = 0.5f;
 	[HideInInspector]	public float recoilAmount_y = 0.5f;
@@ -452,7 +445,6 @@ public class GunScript : MonoBehaviour {
                 waitTillNextFire = 1;
                 bulletsInTheGun -= 1;
 
-                // Call HitEnemy function to apply damage to the enemy
                 RaycastHit hit;
                 if (Physics.Raycast(bulletSpawnPlace.transform.position, bulletSpawnPlace.transform.forward, out hit))
                 {
@@ -541,7 +533,8 @@ public class GunScript : MonoBehaviour {
 	 */
 	[Tooltip("HUD bullets to display bullet count on screen. Will be find under name 'HUD_bullets' in scene.")]
 	public TextMesh HUD_bullets;
-	public void OnGUI(){
+    public void OnGUI()
+    {
 		if(!HUD_bullets){
 			try{
 				HUD_bullets = GameObject.Find("HUD_bullets").GetComponent<TextMesh>();
@@ -550,10 +543,20 @@ public class GunScript : MonoBehaviour {
 				print("Couldnt find the HUD_Bullets ->" + ex.StackTrace.ToString());
 			}
 		}
-		if(mls && HUD_bullets)
+		if (mls && HUD_bullets)
+			if(Input.GetKeyDown(KeyCode.V))
+			{
+				bulletsIHave += 20f;
+			}
+			//bulletsIHave += additionalBullet;
 			HUD_bullets.text = bulletsIHave.ToString() + " - " + bulletsInTheGun.ToString();
 
 		DrawCrosshair();
+	}
+
+	public void TakeBullet(float additionalBullet)
+	{
+		bulletsIHave += additionalBullet;
 	}
 
 	[Header("Crosshair properties")]

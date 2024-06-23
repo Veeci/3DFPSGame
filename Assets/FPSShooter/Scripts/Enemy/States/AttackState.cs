@@ -36,7 +36,7 @@ public class AttackState : BaseState
 
     public override void Perform()
     {
-        if (playerHealth == null) // If playerHealth was not found, exit
+        if (playerHealth == null) 
         {
             stateMachine.ChangeState(stateMachine.chaseState);
             return;

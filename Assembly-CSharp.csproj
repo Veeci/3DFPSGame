@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{F029730F-DDBD-3A3E-FDAA-A8DA1FB02F1A}</ProjectGuid>
+    <ProjectGuid>{A4890F6C-03B7-0E5B-5BEA-EC7DC2D7870F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -62,11 +62,13 @@
   <ItemGroup>
     <Compile Include="Assets\FPSShooter\Scripts\Enemy\States\PatrolState.cs" />
     <Compile Include="Assets\FPSShooter\Scripts\Player\PlayerHealth.cs" />
+    <Compile Include="Assets\FPSShooter\Scripts\MainMenu\MainMenu.cs" />
     <Compile Include="Assets\FPSShooter\Scripts\DestroyAfterTimeParticle.cs" />
     <Compile Include="Assets\FPSShooter\Scripts\InteractableHandling\EventOnlyInteractable.cs" />
     <Compile Include="Assets\FPSShooter\Scripts\InteractableHandling\InteractionEvent.cs" />
     <Compile Include="Assets\FPSShooter\Scripts\Player\PlayerUI_Interact.cs" />
     <Compile Include="Assets\FPSShooter\Scripts\InteractableObjects\ContainerDoor_Left.cs" />
+    <Compile Include="Assets\FPSShooter\Scripts\MainMenu\WinLose.cs" />
     <Compile Include="Assets\FPSShooter\Scripts\InteractableObjects\HealthBox.cs" />
     <Compile Include="Assets\FPSShooter\Scripts\InteractableHandling\Interactable.cs" />
     <Compile Include="Assets\FPSShooter\Scripts\Gun\GunInventory.cs" />
@@ -74,6 +76,7 @@
     <Compile Include="Assets\FPSShooter\Scripts\InteractableObjects\Vaccine.cs" />
     <Compile Include="Assets\FPSShooter\Scripts\InteractableObjects\AmmoBox.cs" />
     <Compile Include="Assets\FPSShooter\Scripts\Player\MouseLookScript.cs" />
+    <Compile Include="Assets\FPSShooter\Scripts\MainMenu\MouseAp.cs" />
     <Compile Include="Assets\FPSShooter\Scripts\Enemy\States\ChaseState.cs" />
     <Compile Include="Assets\FPSShooter\Scripts\Gun\BulletScript.cs" />
     <Compile Include="Assets\FPSShooter\Scripts\Player\PlayerMovementScript.cs" />
@@ -82,6 +85,7 @@
     <Compile Include="Assets\FPSShooter\Scripts\Player\PlayerInteract.cs" />
     <Compile Include="Assets\FPSShooter\Scripts\Gun\GunScript.cs" />
     <Compile Include="Assets\FPSShooter\Scripts\Player\InputManager.cs" />
+    <Compile Include="Assets\FPSShooter\Scripts\MainMenu\PauseMenu.cs" />
     <Compile Include="Assets\FPSShooter\Scripts\Enemy\Path.cs" />
     <Compile Include="Assets\FPSShooter\Scripts\Enemy\States\AttackState.cs" />
     <Compile Include="Assets\FPSShooter\Scripts\Enemy\StateMachine.cs" />

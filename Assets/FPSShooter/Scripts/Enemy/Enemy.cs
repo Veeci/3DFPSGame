@@ -18,9 +18,9 @@ public class Enemy : MonoBehaviour
     public float sightDistance = 30f;
     public float fieldOfView = 85f;
 
-    public float walkSpeed = 3f;  // Adjust as needed
-    public float runSpeed = 4f;   // Add running speed
-    public float attackRange = 2f;  // Distance at which enemy attacks
+    public float walkSpeed = 3f;  
+    public float runSpeed = 4f;   
+    public float attackRange = 2f;  
     public float attackDamage = 10f;
 
     public float maxHealth = 100f;
@@ -108,7 +108,6 @@ public class Enemy : MonoBehaviour
             walkSpeed = 0;
             runSpeed = 0;
             agent.isStopped = true;
-            StartCoroutine(DestroyAfterDelay(180f)); // Start coroutine to destroy object after 3 minutes
         }
     }
 
