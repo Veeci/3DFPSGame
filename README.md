@@ -54,7 +54,7 @@ This project is a 3D first-person shooter game featuring a zombie-themed combat 
 2. **Objective:**
     - Survive against waves of zombies.
     - Explore the environment to find weapons and health packs.
-    - Complete levels by eliminating all enemies.
+    - Complete levels by finding Vaccines are hided inside a random container in the whole map.
 
 ## Demo
 
